@@ -33,7 +33,7 @@ namespace PetaPoco.Compiled.Extensions
         public static IServiceCollection AddPetaPoco<T>(
             this IServiceCollection services,
             Action<PetaPocoDBContextOptions> setupAction)
-            where T : PetaPocoDBContext
+            where T : class ,IPetaPocoDBContext
         {
             if (null == services)
             {
@@ -47,7 +47,7 @@ namespace PetaPoco.Compiled.Extensions
 
             services.AddOptions();
             services.Configure(setupAction);
-            services.AddScoped<PetaPocoDBContext, T>();
+            services.AddScoped<IPetaPocoDBContext, T>();
 
             return services;
 

@@ -1,0 +1,9 @@
+﻿@model System.Collections.Generic.IList<PetaPoco.Compiled.Extensions.MvcTest.Models.User>
+
+<div>
+    @foreach(var user in Model)
+    {
+        <div>@user.Uid</div>
+        <div>@user.UserName</div>
+    }
+</div>

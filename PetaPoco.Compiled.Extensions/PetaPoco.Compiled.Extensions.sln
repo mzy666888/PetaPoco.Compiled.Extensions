@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetaPoco.Compiled.Extensions", "PetaPoco.Compiled.Extensions\PetaPoco.Compiled.Extensions.csproj", "{4C52418D-D5F9-4A7B-AF35-F34B1D617231}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetaPoco.Compiled.Extensions.MvcTest", "PetaPoco.Compiled.Extensions.MvcTest\PetaPoco.Compiled.Extensions.MvcTest.csproj", "{9F5D3747-18BD-45A0-98FF-53CE7ED86F74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetaPoco.Compiled.Extensions.Test", "PetaPoco.Compiled.Extensions.Test\PetaPoco.Compiled.Extensions.Test.csproj", "{70F5E277-DBEF-4514-91AB-E83C14B26934}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{6FB3431A-A49C-45A3-B243-9165D034A7A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4C52418D-D5F9-4A7B-AF35-F34B1D617231}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4C52418D-D5F9-4A7B-AF35-F34B1D617231}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4C52418D-D5F9-4A7B-AF35-F34B1D617231}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4C52418D-D5F9-4A7B-AF35-F34B1D617231}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F5D3747-18BD-45A0-98FF-53CE7ED86F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F5D3747-18BD-45A0-98FF-53CE7ED86F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F5D3747-18BD-45A0-98FF-53CE7ED86F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F5D3747-18BD-45A0-98FF-53CE7ED86F74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70F5E277-DBEF-4514-91AB-E83C14B26934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70F5E277-DBEF-4514-91AB-E83C14B26934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70F5E277-DBEF-4514-91AB-E83C14B26934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70F5E277-DBEF-4514-91AB-E83C14B26934}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{70F5E277-DBEF-4514-91AB-E83C14B26934} = {6FB3431A-A49C-45A3-B243-9165D034A7A5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AC340FD-CAD5-49C5-9362-BD1A33194FF3}
+	EndGlobalSection
+EndGlobal
