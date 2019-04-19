@@ -16,3 +16,5 @@
 
 在nuget中发布了0.0.1版本
 使用命令 >> Install-Package PetaPoco.Compiled.Extensions -Version 0.0.1
+
+BLOG:https://blog.csdn.net/weixin_42930928/article/details/89384044
