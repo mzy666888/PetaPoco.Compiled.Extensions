@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>PetaPoco.Compiled.Extensions.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyVersion>1904.109.0051.0</AssemblyVersion>
+    <FileVersion>1904.109.0051.0</FileVersion>
+    <Version>0.0.1</Version>
+    <Description>PetaPoco.Compiled.Extensions</Description>
+    <Copyright>Copyright 2019 SesameTech</Copyright>
+    <PackageLicenseUrl>https://mit-license.org/</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/mzy666888/PetaPoco.Compiled.Extensions</PackageProjectUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>PetaPoco.Compiled.Extensions</PackageReleaseNotes>
+    <PackageTags>PetaPoco.Compiled.Extensions</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Options" Version="2.2.0" />
+    <PackageReference Include="PetaPoco.Compiled" Version="6.0.394" />
+  </ItemGroup>
+
+</Project>
