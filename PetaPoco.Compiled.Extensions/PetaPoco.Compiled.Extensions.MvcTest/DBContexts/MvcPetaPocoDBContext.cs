@@ -7,13 +7,13 @@ namespace PetaPoco.Compiled.Extensions.MvcTest.DBContexts
 {
     using Microsoft.Extensions.Options;
 
-    public class MvcPetaPocoDBContext:PetaPocoDBContext
+    public class MvcPetaPocoDBContext:PetaPocoDBContextConfiguration
     {
         /// <summary>
         /// 构造函数
         /// </summary>
         /// <param name="optionsAccessor"></param>
-        public MvcPetaPocoDBContext(IOptions<PetaPocoDBContextOptions> optionsAccessor)
+        public MvcPetaPocoDBContext(IOptions<PetaPocoDBContextConfigurationOptions> optionsAccessor)
             : base(optionsAccessor)
         {
         }

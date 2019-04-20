@@ -5,7 +5,6 @@ using System.Threading.Tasks;
 
 namespace PetaPoco.Compiled.Extensions.MvcTest.Services
 {
-    using PetaPoco.Compiled.Extensions.MvcTest.DBContexts;
     using PetaPoco.Compiled.Extensions.MvcTest.Models;
 
     public interface IUserService

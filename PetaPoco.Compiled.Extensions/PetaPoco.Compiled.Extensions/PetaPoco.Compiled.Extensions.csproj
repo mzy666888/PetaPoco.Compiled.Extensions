@@ -4,8 +4,8 @@
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>PetaPoco.Compiled.Extensions.pfx</AssemblyOriginatorKeyFile>
-    <AssemblyVersion>1904.109.0051.0</AssemblyVersion>
-    <FileVersion>1904.109.0051.0</FileVersion>
+    <AssemblyVersion>1904.110.0337.0</AssemblyVersion>
+    <FileVersion>1904.110.0337.0</FileVersion>
     <Version>0.0.1</Version>
     <Description>PetaPoco.Compiled.Extensions</Description>
     <Copyright>Copyright 2019 SesameTech</Copyright>

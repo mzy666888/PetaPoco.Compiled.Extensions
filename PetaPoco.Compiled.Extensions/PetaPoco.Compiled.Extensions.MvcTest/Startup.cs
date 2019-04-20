@@ -13,6 +13,7 @@ namespace PetaPoco.Compiled.Extensions.MvcTest
 {
     using PetaPoco.Compiled.Extensions.MvcTest.DBContexts;
     using PetaPoco.Compiled.Extensions.MvcTest.Services;
+    using PetaPoco.Providers;
 
     public class Startup
     {
@@ -34,13 +35,18 @@ namespace PetaPoco.Compiled.Extensions.MvcTest
             });
 
 
-            services.AddPetaPoco<MvcPetaPocoDBContext>(
+            services.AddPetaPocoConfiguration<MvcPetaPocoDBContext>(
                 options =>
                     {
+
                         var connectionStrnig = Configuration["ConnectionStrings:MySQL:MvcMySQL"];
                         var providerName = Configuration["ConnectionStrings:MySQL:provider"];
-                        options.ConnectionString = connectionStrnig;
-                        options.ProviderName = providerName;
+                        
+                       //options.ConnectionString = connectionStrnig;
+                        //options.ProviderName = providerName;
+                        options.Configuration = DatabaseConfiguration.Build().UsingConnectionString(connectionStrnig)
+                            .UsingProvider<MariaDbDatabaseProvider>();
+                        //.UsingProviderName(providerName);
                     });
 
             services.AddScoped<IUserService, UserService>();

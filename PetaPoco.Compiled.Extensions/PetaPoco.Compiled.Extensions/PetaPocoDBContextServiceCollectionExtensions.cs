@@ -52,5 +52,27 @@ namespace PetaPoco.Compiled.Extensions
             return services;
 
         }
+
+        public static IServiceCollection AddPetaPocoConfiguration<T>(
+            this IServiceCollection services,
+            Action<PetaPocoDBContextConfigurationOptions> setupAction)
+            where T : class, IPetaPocoDBContext
+        {
+            if (null == services)
+            {
+                throw new ArgumentNullException(nameof(services));
+            }
+
+            if (null == setupAction)
+            {
+                throw new ArgumentNullException(nameof(setupAction));
+            }
+
+            services.AddOptions();
+            services.Configure(setupAction);
+            services.AddScoped<IPetaPocoDBContext, T>();
+
+            return services;
+        }
     }
 }

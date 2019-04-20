@@ -40,4 +40,17 @@ namespace PetaPoco.Compiled.Extensions
 
         }
     }
+
+    public abstract class PetaPocoDBContextConfiguration : Database, IPetaPocoDBContext
+    {
+        /// <summary>
+        /// 构造函数
+        /// </summary>
+        /// <param name="optionsAccessor"></param>
+        protected PetaPocoDBContextConfiguration(IOptions<PetaPocoDBContextConfigurationOptions> optionsAccessor)
+            : base(optionsAccessor.Value.Configuration)
+        {
+
+        }
+    }
 }
